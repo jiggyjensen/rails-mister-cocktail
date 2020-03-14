@@ -23,8 +23,14 @@ class CocktailsController < ApplicationController
     end
   end
 
+  def destroy
+    set_cocktail
+    @cocktail.destroy
+    redirect_to root_path, notice: 'cocktail deleted.'
+  end
+
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, photos: [])
   end
 
   def set_cocktail
