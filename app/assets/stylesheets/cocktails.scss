@@ -1,3 +1,80 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hero > h1 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+}
+
+.hero > article > p {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  margin: 5px;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1542600176-9d2c4bb4bc1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1601&q=80') center;
+  background-size: cover;
+  padding: 10rem 8rem;
+}
+
+  /* Grid styles */
+
+.cocktails {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+
+body {
+  margin: 0px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 0px;
+  background-color: #000000;
+}
+
+li {
+  margin: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+#title {
+  margin-right: auto;
+}
+
+
+li a {
+ color: white;
+ text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: none;
+}

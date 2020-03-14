@@ -22,4 +22,8 @@ ingredient['drinks'].each do |thing|
   Ingredient.create(name: thing['strIngredient1'])
 end
 
+Ingredient.create(name: "Tonic")
+Ingredient.create(name: "Orange Juice")
+
+
 puts "Finished!"

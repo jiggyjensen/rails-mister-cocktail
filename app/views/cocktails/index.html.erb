@@ -1,0 +1,29 @@
+<nav>
+  <ul>
+    <li id="title"><a>Mister Cocktail</a></li>
+    <li><%= link_to "+ Add a new cocktail", new_cocktail_path %></li>
+  </ul>
+</nav>
+<main class="wrapper">
+  <section class="hero">
+    <h1>Thirsty?</h1>
+    <article>
+     <p> Browse all your favorite cocktails with Mister Cocktail,
+      add your own concoctions, and share recipes.</p>
+    </article>
+  </section>
+
+<section class="cocktails" id="cocktails">
+<% @cocktails.each do |cocktail| %>
+  <cocktail>
+    <%= link_to cocktail_path(cocktail) do %>
+    <h2><%= cocktail.name %></h2>
+    <% end %>
+  </cocktail>
+<% end %>
+</section>
+
+</main>
+<footer>
+  <p>&copy; JD 2020. Made with ❤ </p>
+</footer>
